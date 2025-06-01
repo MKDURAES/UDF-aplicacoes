@@ -15,8 +15,17 @@
         font-weight: 400;
         font-style: normal;
         font-size: 3rem;
+        color: red;
+        text-shadow:2px 2px  black ;
         }
-
+        #btn-topo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        z-index: 1000;
+        color: black;
+        }
 
 
     </style>
@@ -40,6 +49,7 @@
             </div>
         </div>
     </div>
+    <!--NavBar-->
     <div class="row">
         <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -54,31 +64,31 @@
                         <a class="nav-link active" aria-current="page" href="index.html"></a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Cultura</a>
+                        <a class="nav-link" href="#">MOTO GP</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Saúde</a>
+                        <a class="nav-link" href="#">WEC</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Educação</a>
+                        <a class="nav-link" href="#">INDY</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Esporte</a>
+                        <a class="nav-link" href="#">F1</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Segurança</a>
+                        <a class="nav-link" href="#">F2</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Entretenimento</a>
+                        <a class="nav-link" href="#">STOCK CAR</a>
                         </li>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Notícias
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Locais</a></li>
-                            <li><a class="dropdown-item" href="#">Nacionais</a></li>
-                            <li><a class="dropdown-item" href="#">Intenacionais</a></li>
+                            <li><a class="dropdown-item" href="#">APOSTAS</a></li>
+                            <li><a class="dropdown-item" href="#">ONDE ASSISTIR</a></li>
+                            <li><a class="dropdown-item" href="#">CHEFÃO GP</a></li>
                         </ul>
                         </li>
                     </ul>
@@ -87,8 +97,9 @@
              </nav>
         </div>
     </div>
+    <!--Carousel-->
     <div class="row my-3">
-        <div col="col-lg-12">
+        <div col="col-lg-8">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -112,10 +123,137 @@
                   </div>
         </div>
     </div>
+    <!--Card Group-->
+    <div class="card-group">
+        <div class="card">
+            <img src="image/VR.jpg" class="card-img-top" alt="Valentino Rossi comemorando vitória nas pistas.">
+            <div class="card-body">
+                <h5 class="card-title">Lenda do MotoGP!</h5>
+                <p class="card-text">Valentino Rossi é amplamente reconhecido como um dos maiores pilotos da história do motociclismo. Com 9 títulos mundiais em diferentes categorias, 
+                sendo 7 deles na principal (MotoGP), sua carreira é marcada por carisma, longevidade e rivalidades icônicas. 
+                Seu estilo agressivo e sua conexão com os fãs o tornaram uma verdadeira lenda das pistas.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image/MM2.jpg" class="card-img-top" alt="Fenômeno das pistas!">
+            <div class="card-body">
+                <h5 class="card-title">Fenômeno das pistas</h5>
+                <p class="card-text">Marc Márquez é um dos maiores nomes do MotoGP moderno. Com apenas 20 anos, tornou-se o mais jovem campeão da categoria em 2013. 
+                Conquistou 6 títulos na MotoGP entre 2013 e 2019, sendo conhecido por seu estilo agressivo, manobras ousadas e domínio      técnico. 
+                Sua carreira é marcada por retornos impressionantes após lesões sérias.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image/LV.jpg" class="card-img-top" alt="Laurens Vanthoor com uniforme da Porsche">
+            <div class="card-body">
+                <h5 class="card-title">Especialista em GT3!</h5>
+                <p class="card-text"> Laurens Vanthoor é um dos mais respeitados pilotos de GT3 da atualidade. Campeão das 24h de Nürburgring, Spa e do FIA GT World Cup, é piloto oficial da Porsche e destaque em competições como o GT World Challenge e IMSA. Conhecido por sua precisão e agressividade nas pistas, Vanthoor é sinônimo de excelência nas corridas de endurance e sprint.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2 class="mb-4">Últimas Notícias</h2>
+        <div class="row g-4">
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 Aprilia precisa reagir com firmeza e seguir vida sem Martín na MotoGP
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                      <strong>Jorge Martín fez a opção de se liberar do contrato com a Aprilia para a temporada 2026 e agora terá de buscar uma recolocação na MotoGP. Além disso, a própria equipe italiana terá de encontrar um novo piloto para seguir a vida na categoria, mas deve começar a fazer isso a partir de agora e de maneira enérgica.
+                      De acordo com Martín, a cláusula foi uma condição chave para aceitar o contrato que lhe foi oferecido no ano passado. O espanhol deixou claro que, sem a possibilidade de ampliar a validade deste ponto contratual, optou por executá-lo.
+                </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        SOS Aprilia: quais são as opções para substituir Martín na MotoGP 2026
+                  </button>
+                </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <strong>Com Jorge Martín fora de cena, a Aprilia terá de recorrer ao mercado de pilotos em busca de um parceiro para Marco Bezzecchi. E, mesmo que muitos pilotos estejam longe das ‘prateleiras’, restam algumas opções interessantes.
+                  As alternativas mais simples passam por nomes como Luca Marini, Franco Morbidelli, Jack Miller e Johann Zarco, que estão livres de contrato já no fim deste ano.
+              </div>        
+            </div>        
+          </div>      
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Ogura opera fratura na perna, mas Trackhouse confia em retorno já para GP de Aragão
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>A Trackhouse confirmou que Ai Ogura foi submetido a uma cirurgia na perna direita para tratar uma fratura na tíbia. Como procedimento foi feito por laparoscopia, equipe confia em retorno a tempo do GP de Aragão.
+                      Ai sofreu uma queda no treino livre 1 em Silverstone. O japonês até tentou participar da segunda atividade, mas encerrou os trabalhos mais cedo se queixando de dores no joelho. Exames posteriores indicaram uma fratura de tíbia, removendo o piloto de todo o fim de semana.
+                    </div>
+                  </div>
+                </div>
+              </div>               
+            </div>
+        
+
+
+      
 
 
 
     
+
+     <!-- Botão Voltar ao Topo -->
+    <button id="btn-topo" class="btn btn-primary">
+     ↑ Topo
+    </button>
+
+
+    <!--Spinner-->
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+            <p></p>
+    
+
+    <!--Footer-->
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Fala Mansa - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    
+    
+    <script>
+    const btnTopo = document.getElementById('btn-topo');
+
+    window.addEventListener('scroll', () => {
+      btnTopo.style.display = window.scrollY > 200 ? 'block' : 'none';
+    });
+
+    btnTopo.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
+
 </body>
 </html>
